@@ -1,0 +1,109 @@
+    /*Loại bỏ css*/
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #main {}
+    
+    #header {
+        height: 46px;
+        background-color: #000;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px; //bam dinh sang phai
+    }
+    
+    #nav {
+        display: inline-block;
+    }
+    
+    #nav>li {
+        display: inline-block;
+    }
+    
+    #nav li {
+        position: relative;
+    }
+    
+    #nav>li>a {
+        color: #fff;
+        text-decoration: none;
+        line-height: 46px;
+        padding: 0px 24px;
+        display: block;
+        text-transform: uppercase;
+    }
+    /* Chỉ tác động vào thẻ li cấp 1 */
+    
+    #nav li:hover .subnav {
+        display: block;
+    }
+    
+    #nav .subnav li:hover a,
+    #nav>li:hover>a {
+        color: #000;
+        background-color: #ccc;
+    }
+    
+    #nav,
+    .subnav {
+        list-style-type: none;
+    }
+    
+    #nav .subnav {
+        display: none;
+        min-width: 160px;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        background-color: #fff;
+        color: #000;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 3);
+    }
+    
+    #nav .subnav a {
+        color: #000;
+        text-decoration: none;
+        padding: 0 12px;
+        line-height: 38px;
+    }
+    
+    #nav .nav-arrow-down {
+        font-size: 14px;
+    }
+    /* header search */
+    
+    #header .search-btn {
+        float: right;
+        padding: 0 21px;
+    }
+    
+    #header .search-btn:hover {
+        cursor: pointer;
+        background-color: #f44336;
+    }
+    
+    #header .search-icon {
+        color: #ffF;
+        font-size: 16px;
+        line-height: 46px;
+    }
+    /*  */
+    
+    #slider {
+        margin-top: 46px;
+        padding-top: 50%;
+        background: url('/assets/img/slider/slider-1.jpg') top center / cover no-repeat;
+    }
+    
+    #content {}
+    
+    #footer {}
